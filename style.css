@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* font-family: "Fredoka", "san-serif"; */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1640px;
+}
+
+
+/* ======== NAV STYLING ========== */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 400000000000000;
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #856D47;
+    z-index: 400000000000000;
+    box-shadow: 0px -2px 2px rgba(30, 30, 30, 0.07),
+        0px 2px 2px rgba(30, 30, 30, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.closemenu,
+.openmenu {
+    display: none;
+}
+
+.link_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.list_item {
+    display: flex;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+}
+
+.list_item li {
+    margin-right: 1.5em;
+    list-style: none;
+}
+
+.list_item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.login {
+    font-size: 1.1rem;
+    background: transparent;
+    border: none;
+    margin-right: 1em;
+    color: white;
+}
+
+.signup {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 0.5em 1.2em;
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+
+/* ======== HERO SECTION ============= */
+.hero_section {
+    background-image: url(images/hero_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero_section_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.hero_section_content h1 {
+    width: 50%;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero_section_content p {
+    width: 40%;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero_btn {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 1em 1.5em;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/*========== LUXURY SECTION =========== */
+.luxury_section {
+    background-color: #F1EFE9;
+    padding-top: 2rem;
+    height: 80vh;
+}
+
+.luxury_section_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.luxury_section_content p {
+    margin-top: -6rem;
+}
+
+.luxury_section_content h1 {
+    width: 80%;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.luxury_btn {
+    border: 1px solid #856D47;
+    background-color: #856D47;
+    border-radius: 2px;
+    padding: 1em 1.5em;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+/* LOCATION */
+.location_facilities_content {
+    margin-top: 7rem;
+}
+
+.location_heading {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 40%;
+}
+
+.location_grid_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.location_content {
+    position: relative;
+}
+
+.location_content img {
+    width: 100%;
+    height: 450px;
+}
+
+.location_content div {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    color: white;
+}
+
+.location_content h1 {
+    margin: 1rem 0;
+}
+
+.location_content p {
+    margin: .5rem 0;
+}
+
+/*========== BEVERAGES SECTION =========== */
+.beverages_section {
+    background-color: #856D47;
+    padding-top: 2rem;
+    height: 80vh;
+    margin-top: 5rem;
+}
+
+.beverages_section_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.beverages_section_content div:first-child {
+    width: 40%;
+}
+
+.beverages_section_content h1 {
+    width: 60%;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.beverages_btn {
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 2px;
+    padding: 1em 1.5em;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.beverages_img {
+    margin-top: -4rem;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial_section_content {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.testimonial_section_content p {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.testimonial_section_content h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.testimonial_flex_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin: 2rem 0;
+}
+
+.client_testimonial_content {
+    display: flex;
+}
+
+.client_testimonial_content img {
+    width: 70px;
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.testimonial_card {
+    padding: 1.5rem;
+    background-color: #F1EFE9;
+    font-size: 1.1rem;
+    border-radius: 7px;
+}
+
+/* =========== NEWSLETTER ========== */
+.newsletter_section {
+    width: 40%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.newsletter_content h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.newsletter_content p {
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.newsletter_border {
+    border: 1px solid #D9D9D9;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin: .5rem auto;
+    margin-bottom: -2rem;
+}
+
+.newsletter_border input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.newsletter_btn {
+    border: 1px solid #856D47;
+    background-color: #856D47;
+    border-radius: 2px;
+    padding: .5em 1em;
+    font-size: 1rem;
+    color: white;
+}
+
+.newsletter_privacy {
+    font-size: 1rem;
+}
+
+/* ======== CUSTOMER CARE ========= */
+.customer_section {
+    background-color: #856D47;
+    padding: 1rem 0;
+    color: white;
+}
+
+.customer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1A1818;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.footer_logo_section {
+    width: 30%;
+}
+
+.footer_logo_section p {
+    margin-top: 2rem;
+}
+
+.footer_link_section {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.footer_link_section li {
+    list-style: none;
+    margin-bottom: .85rem;
+}
+
+.footer_link_section li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.head_office {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+
+    /* NAV STYLING */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    .openmenu {
+        display: block;
+    }
+
+    .closemenu {
+        display: none;
+        position: fixed;
+        top: 1em;
+        right: 1.5em;
+        z-index: 2000000;
+    }
+
+    .link_item {
+        transform: translateX(101%);
+        transition: .5s ease;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #B4A79B;
+        padding-right: 2em;
+        height: 100vh;
+        z-index: 100000;
+        padding-top: 3em;
+        overflow: hidden;
+    }
+
+    .link_item_show {
+        transform: translateX(0%);
+    }
+
+    .list_item {
+        display: block;
+        position: absolute;
+        right: 1.5em;
+        top: 4em;
+    }
+
+    .list_item li {
+        margin-right: 1.5em;
+        list-style: none;
+        margin-top: 1em;
+    }
+
+    .btn_item {
+        position: absolute;
+        top: 15em;
+        right: 1.5em;
+        display: grid;
+    }
+
+    .login {
+        display: block;
+        margin-right: 4.5em;
+        margin-bottom: 1em;
+    }
+
+    /*  */
+    .hero_section {
+        min-height: 100vh;
+    }
+
+    .hero_section_content {
+        min-height: 100vh;
+    }
+
+    .hero_section_content h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .hero_section_content p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hero_btn {
+        padding: .75em 1.5em;
+        font-size: 1rem;
+    }
+
+    /*========== LUXURY SECTION =========== */
+    .luxury_section {
+        background-color: transparent;
+        padding: 2rem 0;
+        height: 100%;
+    }
+
+    .luxury_section_content {
+        flex-direction: column;
+    }
+
+    .luxury_section_content p {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .luxury_section_content h1 {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .luxury_btn {
+        padding: .75em 1.5em;
+        font-size: 1rem;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    .luxury_img {
+        width: 100%;
+        height: 80%;
+    }
+
+    /* LOCATION */
+    .location_facilities_content {
+        margin-top: 2rem;
+    }
+
+    .location_heading {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .location_grid_content {
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .location_content img {
+        height: 380px;
+    }
+
+    /*========== BEVERAGES SECTION =========== */
+    .beverages_section {
+        padding: 2rem 0;
+        height: 100%;
+    }
+
+    .beverages_section_content {
+        flex-direction: column;
+    }
+
+    .beverages_section_content div:first-child {
+        width: 100%;
+    }
+
+    .beverages_section_content p {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .beverages_section_content h1 {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .beverages_btn {
+        padding: .75em 1.5em;
+        font-size: 1rem;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    .beverages_img {
+        width: 100%;
+        height: 80%;
+        margin-top: 0;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial_section_content {
+        margin-top: 2rem;
+    }
+
+    .testimonial_section_content p {
+        font-size: 1rem;
+    }
+
+    .testimonial_section_content h1 {
+        font-size: 2rem;
+    }
+
+    .testimonial_flex_content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .client_testimonial_content {
+        flex-direction: column;
+    }
+
+    .client_testimonial_content img {
+        width: 50px;
+        height: 40px;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .testimonial_card {
+        font-size: 1rem;
+    }
+
+    /* =========== NEWSLETTER ========== */
+    .newsletter_section {
+        width: 100%;
+    }
+
+    .newsletter_content h1 {
+        font-size: 1.7rem;
+    }
+
+    .newsletter_content p {
+        font-size: 1rem;
+    }
+
+    .newsletter_border {
+        border: none;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .newsletter_border input {
+        border: 1px solid #D9D9D9;
+        font-size: 1rem;
+        padding: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .newsletter_btn {
+        font-size: 1rem;
+        padding: 1rem auto;
+    }
+
+    /* CUSTOMER CARE */
+    .customer_content div:first-child {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 1rem;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_logo_section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer_logo_section p {
+        margin-top: 2rem;
+    }
+
+    .footer_link_section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer_link_section div {
+        margin-top: 1rem;
+    }
+
+}
