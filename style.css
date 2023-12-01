@@ -26,6 +26,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 400000000000000;
+    padding: 1em 0;
 }
 
 .navBar {
@@ -37,6 +38,7 @@ nav {
     align-items: center;
     background: #856D47;
     z-index: 400000000000000;
+    padding: 1em 0;
     box-shadow: 0px -2px 2px rgba(30, 30, 30, 0.07),
         0px 2px 2px rgba(30, 30, 30, 0.1);
 }
@@ -57,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 70%;
 }
 
 .list_item {
@@ -86,6 +88,7 @@ nav {
     border: none;
     margin-right: 1em;
     color: white;
+    text-decoration: none;
 }
 
 .signup {
@@ -95,6 +98,7 @@ nav {
     padding: 0.5em 1.2em;
     font-size: 1.1rem;
     color: black;
+    text-decoration: none;
 }
 
 
